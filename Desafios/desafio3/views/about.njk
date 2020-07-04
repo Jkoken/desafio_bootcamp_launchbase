@@ -1,0 +1,23 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+    <div>
+        <img src="{{ about.avatar_url }}" alt="{{ about.name }} Logo">
+        <h1>{{ about.name }}</h1>
+        <p>{{ about.description }}</p>
+        <ul>
+            <h3>{{ about.title }}</h2>
+            <li>{{ about.tech_1 }}</li>
+            <li>{{ about.tech_2 }}</li>
+            <li>{{ about.tech_3 }}</li>
+            <li>{{ about.tech_4 }}</li>
+        </ul>
+        
+        <div id="bottom">
+        {% for link in about.links %}
+            <a id="links_bottom" href="{{ link.url }}" target="_blank">{{ link.name }}</a>
+        {% endfor %}
+        </div>
+        
+    </div>
+{% endblock %}

@@ -1,0 +1,42 @@
+{% extends "layout.njk" %}
+
+{% block title %}
+    <title>{{info.title}}</title>
+    <link rel="stylesheet" href="styles.css">
+{% endblock %}
+
+    <link rel="shortcut icon" href="" type="image/x-icon"/>
+
+
+{% block header %}
+{% endblock %}
+
+
+{% block content %}
+
+<h1>{{ information.title }}</h1>
+
+<section class="cards">
+
+    <div class="card" id="{{ information.id }}">
+        <div class="card_course-link">
+            <iframe src="http://www.rocketseat.com.br/{{information.id}}" frameborder="0"></iframe>
+        </div>
+        <div class="card_title">
+            <p>{{ information.title }}</p>
+        </div>
+        <div class="card_module">
+            <p>{{ information.module }}</p>
+        </div>
+        <div class="card_info">
+            <p>{{ information.info }}</p>
+        </div>
+        <div class="card_pay">
+            <p>{{ information.pay }}</p>
+        </div>
+    </div>
+
+</section>
+{% endblock %}
+
+    

@@ -2,6 +2,9 @@
 
 :root {
     --color-green: #50f17b;
+    --color-starter: #7159c1;
+    --color-launchbase: #fd951f;
+    --color-gostack: #04d361;
 }
 
 * {
@@ -30,14 +33,14 @@ header div {
 
 header div a {
     margin: 0 30px;
-    color: white;
+    color: rgb(221, 219, 219);
     text-decoration: none;
     font-size: 18px;
     line-height: 28px;
 }
 
 header div a:hover {
-    color: #50fa7b;
+    color: var(--color-green);
     transition: color 300ms;
 }
 
@@ -53,6 +56,7 @@ body div img{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
+    align-items: center;
     text-align: center;
 }
 
@@ -103,7 +107,7 @@ body div img{
     height: 110px;
 }
 
-.card_pay p {
+.card_pay {
     font-size: 30px;
     bottom: 0;
     align-items: center;
@@ -151,3 +155,55 @@ iframe {
     top: 5%;
 }
 
+/* C O U R S E */
+.card_course {
+    max-width: 800px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    text-align: center;
+    color: white;
+    border-radius: 25px;
+    background-color: rgba(73, 72, 72, 0.15);
+}
+
+.course_logos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px 50px 50px;
+    align-items: center;
+}
+
+.course_info2 {
+    font-size: 30px;
+    font-weight: 40px;
+    padding-bottom: 35px;
+}
+
+.color-starter {
+    color: var(--color-starter);
+}
+
+.color-launchbase{
+    color: var(--color-launchbase);
+}
+
+.color-gostack {
+    color: var(--color-gostack);
+}
+
+.course_info-module, .course_info {
+    font-size: 24px;
+    font-weight: 34px;
+    padding-bottom: 20px;
+}
+
+.course_pay {
+    text-decoration: none;
+    margin-top: 30px;
+}
+
+.card_pay a {
+    color: var(--color-green);
+}

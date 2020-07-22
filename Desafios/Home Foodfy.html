@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Home Foodfy</title>
+
+        <link href="./Home Foodfy_files/icon" rel="stylesheet">
+        <link rel="stylesheet" href="./Home Foodfy_files/style.css">
+    </head>
+    <body class="vsc-initialized">
+        <header>
+            <a href="http://127.0.0.1:5500/index.html"><img src="./Home Foodfy_files/logo.png" alt="Foodfy"></a>
+            <a class="link" href="http://127.0.0.1:5500/about.html">Sobre</a>
+            <a class="link" href="http://127.0.0.1:5500/recipes.html">Receitas</a>
+        </header>
+
+        <div class="panel">
+            <div class="info">
+                <h1>As melhores receitas</h1>
+                <p>Aprenda a construir os melhores pratos
+                    com receitas criadas por profissionais
+                    do mundo inteiro.</p>
+            </div>
+            <div class="img_panel">
+                <img src="./Home Foodfy_files/chef.png" alt="Chef">
+            </div>
+        </div>
+
+        <div class="most-accessed">
+            <p>Mais acessadas</p>
+        </div>
+
+        <div class="cards">
+            <div class="card" id="P80u9irCLwQ">
+                <div class="img_content grow shadow">
+                    <img src="./Home Foodfy_files/burger.png" alt="Triplo bacon burger">
+                </div>
+                <div class="title_content">
+                    <p>Triplo bacon burger</p>
+                </div>
+                <div class="by_content">
+                    <p>por Jorge Relato</p>
+                </div>
+            </div>
+            <div class="card" id="2">
+                <div class="img_content grow">
+                    <img src="./Home Foodfy_files/pizza.png" alt="Pizza 4 estações">
+                </div>
+                <div class="title_content">
+                    <p>Pizza 4 estações</p>
+                </div>
+                <div class="by_content">
+                    <p>por Fabiana Melo</p>
+                </div>
+            </div>
+            <div class="card" id="3">
+                <div class="img_content grow">
+                    <img src="./Home Foodfy_files/espaguete.png" alt="Espaguete ao Alho">
+                </div>
+                <div class="title_content">
+                    <p>Espaguete ao Alho</p>
+                </div>
+                <div class="by_content">
+                    <p>por Júlia Kinoto</p>
+                </div>
+            </div>
+            <div class="card" id="4">
+                <div class="img_content grow">
+                    <img src="./Home Foodfy_files/lasanha.png" alt="Lasanha mac n&#39; cheese">
+                </div>
+                <div class="title_content">
+                    <p>Lasanha mac n' cheese</p>
+                </div>
+                <div class="by_content">
+                    <p>por Juliano Vieira</p>
+                </div>
+            </div>
+            <div class="card" id="5">
+                <div class="img_content grow">
+                    <img src="./Home Foodfy_files/doce.png" alt="Docinhos pão-do-céu">
+                </div>
+                <div class="title_content">
+                    <p>Docinhos pão-do-céu</p>
+                </div>
+                <div class="by_content">
+                    <p>por Ricardo Golvea</p>
+                </div>
+            </div>
+            <div class="card" id="6">
+                <div class="img_content grow">
+                    <img src="./Home Foodfy_files/asinhas.png" alt="Asinhas de frango ao barbecue">
+                </div>
+                <div class="title_content">
+                    <p>Asinhas de frango ao barbecue</p>
+                </div>
+                <div class="by_content">
+                    <p>por Vania Steroski</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-overlay">
+            <div class="modal">
+                <a class="close-modal">
+                    </a><a href="http://127.0.0.1:5500/index.html">Fechar Modal</a>
+                
+                <div class="modal-content">
+                    <iframe src="./Home Foodfy_files/saved_resource.html" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <script src="./Home Foodfy_files/script.js"></script>
+
+    <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>

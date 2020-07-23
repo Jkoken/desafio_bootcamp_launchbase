@@ -138,7 +138,8 @@ header {
     position: relative;
 }
 .modal .close-modal {
-    color: black;
+    text-decoration: none;
+    color: #999999;
     position: absolute;
     right: 8px;
     top: 8px;

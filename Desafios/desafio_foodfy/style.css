@@ -92,7 +92,6 @@ body div.most-accessed {
 body div.cards {
     max-width: 940px;
     max-height: 434px;
-    /* margin: 0 auto auto 230px; */
     margin-top: 0;
     margin-left: 230px;
     display: grid;
@@ -169,6 +168,7 @@ body .by_content p {
 .modal-overlay.active {
     opacity: 1;
     visibility: visible;
+    transition: 200ms;
 }
 
 iframe.img {

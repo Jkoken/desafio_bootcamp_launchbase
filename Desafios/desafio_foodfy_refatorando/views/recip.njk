@@ -1,0 +1,71 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+    <title>Receita {{recip.title}}</title>
+{% endblock %}
+
+{% block header %}
+    <a href="/"><img src="/assets/logo.png" alt="Foodfy"></a>
+    <a class="link" href="/about">Sobre</a>
+    <a class="link bold" href="/recipes">Receitas</a>
+{% endblock %}
+
+
+{% block content %}
+<div class="recipe">
+    <div class="image_recipe">
+        <img src="{{recip.image}}" alt="{{recip.title}}">
+    </div>
+    <div class="title_recipe">
+        <p>{{recip.title}}</p>
+    </div>
+    <div class="author_recipe">
+        <p>por {{recip.author}}</p>
+    </div>
+    <div class="ingredient">
+        <div class="headIng">
+            <div class="ingredients_title">
+                <h2>Ingredientes</h2>
+            </div>
+            <input id="myBtn1" onclick="showHide1()" value="ESCONDER" readonly></input>
+        </div>
+        <div class="ingredients_recipe" id="showing1">
+            <ul>
+                {% for ing in recip.ingredients%}
+                    <li>{{ing}}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    <div class="preparation">
+        <div class="headPrep">
+            <div class="preparation_title">
+                <h2>Modo de Preparo</h2>
+            </div>
+            <input id="myBtn2" onclick="showHide2()" value="ESCONDER" readonly></input>
+        </div>
+        <div class="preparation_recipe" id="showing2">
+            <ul>
+                {% for prep in recip.preparation%}
+                    <li>{{prep}}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    <div class="information">
+        <div class="headInfo">
+            <div class="information_title">
+                <h2>Informações adicionais</h2>
+            </div>
+            <input id="myBtn3" onclick="showHide3()" value="ESCONDER" readonly></input>
+        </div>
+        <div class="information_recipe" id="showing3">
+            <p>{{recip.information}}</p>
+        </div>
+    </div>
+
+</div>
+
+    <script src="/script.js"></script>
+
+{% endblock %}

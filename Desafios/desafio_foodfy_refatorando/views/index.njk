@@ -1,0 +1,37 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+<div class="panel">
+    <div class="info">
+        <h1>As melhores receitas</h1>
+        <p>Aprenda a construir os melhores pratos
+            com receitas criadas por profissionais
+            do mundo inteiro.</p>
+    </div>
+    <div class="img_panel">
+        <img src="/assets/chef.png" alt="Chef">
+    </div>
+</div>
+
+<div class="six_recipes">
+    <p>Primeiras Receitas</p>
+</div>
+
+<div class="cards">
+    {% for recip in recipe %}
+        {% if loop.index0 < 6  %}
+            <div class="card" id="{{recip.id}}">
+                <div class="img_content grow shadow">
+                    <img src="{{recip.image}}" alt="{{recip.title}}">
+                </div>
+                <div class="title_content">
+                    <p>{{recip.title}}</p>
+                </div>
+                <div class="by_content">
+                    <p>por {{recip.author}}</p>
+                </div>
+            </div>
+        {% endif %}
+    {% endfor %}
+</div>
+{% endblock %}
